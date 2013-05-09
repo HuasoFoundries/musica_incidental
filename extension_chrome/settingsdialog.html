@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"  type="text/css" href="css/jquery-ui-1.9.2.custom.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	
+	<title>The Time Billing: Opciones</title>
+
+ 	  <script data-main="scripts/settingsdialog" src="scripts/require-jquery.js"></script>
+
+
+	</head>
+
+	<body  id="settingsbody" >
+	<div	class="container">
+		<div class="row">
+			<div class="span12">&nbsp;	</div>
+			<div class="span12">&nbsp;	</div>
+		</div>
+		<div class="row">
+
+			<div class="span12">
+
+ 
+
+		<div class="span6">
+			<div id="cajasettings" >
+				<br><br><br>
+ 						<div class="controls controls-row">
+						    <label class="control-label" for="url">Url</label>
+								    <div class="controls">
+								      <input type="text" class="span5"  id="url" placeholder="Url">
+								    </div> 
+						 
+						    <label class="control-label" for="user">Usuario</label>
+								    <div class="controls">
+								      <input type="text" class="span5" id="user" placeholder="user">
+								    </div>
+						 
+						    <label class="control-label" for="password">Password</label>
+								    <div class="controls">
+								      <input type="password" class="span5" id="pass" placeholder="password">
+								    </div> 
+						
+	
+						</div>
+
+
+			 				<br class="clearfix">
+								<!-- Buttons to save or discard the changes -->
+								<div class="controls" style="padding:5px;">
+									<button id="buttonSave" tabindex="1">Ok</button>
+									<button id="buttonCancel" tabindex="2">Cancelar</button>
+									<button id="buttonPurge" tabindex="3">Borrar Todo</button>
+									<button id="buttonRefresh" tabindex="4">Refrescar Listas</button>
+								</div>
+ 		  				
+ 
+						
+			</div>
+			<div id="trabajosenelsistema">
+							<div id="trabajosenespera">					</div>		<br> 
+							<div id="trabajosenviados">					</div>	
+			</div>
+		</div>						 
+			
+
+		<div class="span5"> 
+				<label>Log</label>
+				<div style="height:570px;overflow-y:auto;"><ul id="log"></ul></div>
+		</div>
+
+
+
+			 
+
+				  </div>
+			</div>
+
+		</div>
+		</div>
+    </body>
+
+
+</html>

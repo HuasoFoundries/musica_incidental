@@ -1,0 +1,64 @@
+
+/*html, body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  min-width: 485px;
+  height: 310px;
+  font-size:11px;
+  background:#F9F9F9;
+}*/
+ 
+.clearfix { clear: both;  content: ".";  display: block;height: 7px;   } 
+.clearfix:after{  clear: both;  content: ".";  display: block;  visibility: hidden;  font-size: 0;}
+
+
+.bold {
+  font-weight: bold;
+}
+
+ 
+ 
+#disable, #continue_btn,#backgrounddiv {
+  display: none;
+}
+ 
+ 
+.new {background:#FFC;}
+
+.item img, .item a img {
+  margin:2px 5px 2px 1px;
+  vertical-align:middle;
+  width:40px;
+  height:40px;
+  float:left;
+}
+
+#controles {margin: 2px;
+clear: both;
+display: block;
+width: 450px;
+position: relative;
+left: 5px;
+height: 30px;
+padding: 10px 0;}
+
+
+ul#botonesysonidos {list-style: none;padding: 0;}
+ul#botonesysonidos li {list-style: none;
+float: left;
+height: 110px;
+vertical-align: middle;
+display: block;
+width: 115px;
+text-align: center;
+vertical-align: bottom;
+font-family: verdana;
+font-size: 11px;
+margin-bottom: 10px;}
+
+ul#botonesysonidos li embed {display:block;clear:both;margin:auto;}
+ul#botonesysonidos li audio {width:45px;display:block;clear:both;margin:auto;padding: 25px 5px;}
+
+
+#sonidos {width:600px;height:430px;}
