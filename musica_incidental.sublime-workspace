@@ -1,0 +1,629 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"functio",
+				"function_exists"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"fe",
+				"fetchAll"
+			],
+			[
+				"fecha",
+				"fechaformateada"
+			],
+			[
+				"base",
+				"base64_decode"
+			],
+			[
+				"codigo_",
+				"codigo_asunto_secundario"
+			],
+			[
+				"Ar",
+				"ArrayCompania"
+			],
+			[
+				"se",
+				"sesion"
+			],
+			[
+				"query_",
+				"query_montos_facturas"
+			],
+			[
+				"array",
+				"arrayanchors"
+			],
+			[
+				"tipo",
+				"tipo_doc_uppercase"
+			],
+			[
+				"strtou",
+				"mb_strtoupper"
+			],
+			[
+				"htmle",
+				"htmlentities"
+			],
+			[
+				"mos",
+				"mostrar_gastos_sin_impuesto"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"htmlen",
+				"html_entity_decode"
+			],
+			[
+				"arr",
+				"arrayanchors"
+			],
+			[
+				"ob_g",
+				"ob_get_clean"
+			],
+			[
+				"sess",
+				"session_destroy"
+			],
+			[
+				"nuevo",
+				"nuevomodulofactura"
+			],
+			[
+				"codigo",
+				"codigo_asunto_secundario"
+			],
+			[
+				"Load",
+				"LoadByCodigoAsunto"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "musica_incidental.sublime-project",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ss",
+				"Set Syntax: SQL"
+			],
+			[
+				"pr",
+				"Package Control: Remove Package"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"se",
+				"Set Syntax: SQL"
+			],
+			[
+				"sx",
+				"Set Syntax: XML"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/amena/git/cpb/app/plugins/resumen_facturacion.php",
+		"/home/amena/git/cpb/app/plugins/archivo_contabilidad_cpb.php",
+		"/home/amena/git/cpb/app/classes/Autocompletador.php",
+		"/home/amena/git/cpb/app/classes/AutocompletadorAsunto.php",
+		"/home/amena/git/cpb/app/interfaces/ajax/ajax_seleccionar_cliente.php",
+		"/home/amena/git/cpb/app/interfaces/asuntos.php",
+		"/home/amena/git/cpb/app/interfaces/ajax/ajax_seleccionar_asunto.php",
+		"/home/amena/git/cpb/app/interfaces/facturas.php",
+		"/home/amena/git/cpb/app/classes/Factura.php",
+		"/home/amena/git/cpb/app/plugins/contrato_en_buscador.php",
+		"/home/amena/git/cpb/app/interfaces/agregar_pago_factura.php",
+		"/home/amena/git/cpb/app/interfaces/seguimiento_cobro.php",
+		"/home/amena/git/cpb/app/update.php",
+		"/home/amena/git/cpb/app/interfaces/ajax/ajax_adelantos.php",
+		"/home/amena/git/cpb/app/interfaces/adelantos.php",
+		"/home/amena/git/cpb/app/interfaces/agregar_pago_factura.php_arreglada",
+		"/home/amena/git/cpb/app/classes/Reportes/SimpleReport/Writer/DataTable.php",
+		"/home/amena/git/cpb/app/classes/NeteoDocumento.php",
+		"/home/amena/git/cpb/app/interfaces/lista_adelantos.php",
+		"/home/amena/git/cpb/app/classes/Reportes/SimpleReport/Configuration.php",
+		"/home/amena/git/cpb/app/interfaces/ajax/ajax_gastos.php",
+		"/home/amena/git/cpb/app/interfaces/gastos.php",
+		"/home/amena/.config/sublime-text-2/Packages/User/SFTP.errors.log",
+		"/home/amena/git/cpb/app/classes/Reportes/SimpleReport.php",
+		"/home/amena/git/cpb/app/conf.php",
+		"/home/amena/git/cpb/fw/funciones/funciones.php",
+		"/home/amena/git/cpb/app/classes/Reportes/SimpleReport/Writer/Html.php",
+		"/home/amena/git/cpb/app/interfaces/ajax/ajax_facturas.php",
+		"/home/amena/git/cpb/app/interfaces/reportes_configuracion.php",
+		"/home/amena/git/cpb/app/plugins/permiso_abrir_cerrar_asuntos.php",
+		"/home/amena/git/cpb/app/interfaces/configuracion.php",
+		"/home/amena/git/cpb/app/interfaces/trabajo.php",
+		"/home/amena/git/cpb/app/interfaces/planillas/planilla_deudas.php",
+		"/home/amena/Escritorio/lalala.js",
+		"/home/amena/git/cpb/app/interfaces/agregar_factura.php",
+		"/home/amena/git/cpb/web_services/index.php",
+		"/home/amena/git/cpb/app/classes/Trabajo.php",
+		"/home/amena/git/cpb/app/templates/default/headers_nuevo.php",
+		"/run/user/amena/gvfs/sftp:host=50.116.29.51,user=root/home/tereperez/tereperez.com/wp-config.php",
+		"/home/amena/git/cpb/admin/metaquery.php",
+		"/home/amena/git/cpb/app/templates/default/bottom_nuevo.php",
+		"/home/amena/git/cpb/app/interfaces/editar_multiples_trabajos.php",
+		"/home/amena/git/cpb/app/interfaces/agregar_contrato.php",
+		"/home/amena/git/cpb/app/interfaces/agregar_doc_legales.php",
+		"/home/amena/git/cpb/fw/classes/Sesion.php",
+		"/home/amena/git/cpb/app/interfaces/trabajos.php",
+		"/home/amena/git/cpb/app/classes/Cobro.php",
+		"/home/amena/git/cpb/app/interfaces/cobros4.php",
+		"/home/amena/git/cpb/app/interfaces/horas.php",
+		"/home/amena/git/cpb/app/interfaces/cobros3.php",
+		"/home/amena/git/cpb/app/interfaces/ajax/ajax_trabajos.php",
+		"/home/amena/git/cpb/app/templates/slim/selector_condicional.php",
+		"/home/amena/git/cpb/fw/classes/Pagina.php",
+		"/home/amena/git/cpb/app/interfaces/cobros6.php",
+		"/home/amena/git/cpb/app/classes/InputId.php",
+		"/home/amena/git/cpb/app/templates/default/bottom_popup.php",
+		"/home/amena/git/cpb/app/templates/default/bottom_popup_nuevo.php",
+		"/home/amena/git/cpb/app/interfaces/editar_trabajo.php",
+		"/home/amena/git/cpb/app/interfaces/reporte_liq_no_facturadas.php",
+		"/home/amena/git/cpb/app/classes/FacturaPago.php",
+		"/home/amena/git/cpb/app/interfaces/facturas_pagos.php",
+		"/home/amena/git/cpb/app/classes/DocumentoLegalNumero.php",
+		"/home/amena/git/cpb/app/interfaces/ajax/cobros7.php",
+		"/home/amena/git/cpb/fw/classes/Objeto.php",
+		"/home/amena/git/cpb/app/interfaces/planillas/planilla_saldo.php",
+		"/home/amena/git/cpb/app/classes/UtilesApp.php",
+		"/home/amena/git/cpb/app/classes/Asunto.php",
+		"/home/amena/git/cpb/app/classes/Aviso.php",
+		"/home/amena/git/cpb/app/classes/MigradorSaej.php",
+		"/home/amena/git/cpb/app/classes/Migracion.php",
+		"/home/amena/git/cpb/fw/classes/Html.php",
+		"/home/amena/git/cpb/app/templates/slim/input_text_td.php",
+		"/home/amena/git/cpb/app/templates/slim/input_text.php",
+		"/home/amena/git/cpb/app/plugins/estado_de_cobro_en_factura.php",
+		"/home/amena/git/cpb/app/templates/default/index.php",
+		"/home/amena/git/cpb/app/templates/slim/errorsql.php",
+		"/home/amena/git/cpb/app/interfaces/genera_cobros.php",
+		"/home/amena/git/cpb/web_services/webservices.php",
+		"/home/amena/git/cpb/app/interfaces/ajax/ajax_log.php",
+		"/home/amena/git/cpb/app/classes/LogDB.php",
+		"/home/amena/git/cpb/app/classes/Contrato.php",
+		"/home/amena/git/cpb/app/classes/Funciones.php",
+		"/home/amena/git/cpb/sftp-config-alt2.json",
+		"/home/amena/git/cpb/app/interfaces/guardar_campo_trabajo.js",
+		"/home/amena/git/cpb/cpb.sublime-project",
+		"/home/amena/.config/sublime-text-2/Packages/Git/Git.sublime-settings",
+		"/home/amena/.config/sublime-text-2/Packages/User/Git.sublime-settings",
+		"/run/user/amena/gvfs/sftp:host=192.168.1.23,user=root/var/www/phpmyadmin/bigdump.php",
+		"/home/amena/git/ttb/app/test/spec/conf.rb",
+		"/home/amena/git/ttb/app/templates/default/headers_nuevo.php",
+		"/home/amena/git/ttb/backups/backup_dynamo.php",
+		"/home/amena/git/ttb/app/test/spec/requests/monto_cobrable_distinto_a_monto_gasto.rb",
+		"/home/amena/git/ttb/app/test/spec/spec_helper.rb",
+		"/home/amena/git/ttb/admin/respaldos.php",
+		"/home/amena/git/ttb/sftp-config-alt.json",
+		"/home/amena/git/ttb/sftp-config.json",
+		"/home/amena/git/ttb/app/templates/default/top_nuevo.php",
+		"/home/amena/git/ttb/app/test/Gemfile",
+		"/home/amena/git/ttb/app/test/spec/requests/edicion_monto_en_adelantos_y_pagos.rb",
+		"/home/amena/git/ttb/app/test/spec/requests/avisos_spec.rb",
+		"/home/amena/git/ttb/app/test/spec/requests/login_spec.rb",
+		"/home/amena/git/ttb/app/test/spec/requests/copiar_datos_cliente_asunto_independiente_spec.rb",
+		"/home/amena/git/ttb/app/test/spec/requests/agrupador_area_trabajos_reporte_avanzado_spec.rb",
+		"/home/amena/git/ttb/app/interfaces/gastos.php",
+		"/home/amena/git/ttb/app/interfaces/ajax/ajax_gastos.php",
+		"/home/amena/git/ttb/app/interfaces/gastos_xls_resumen.php",
+		"/home/amena/git/ttb/app/test/features/step_definitions/web_steps.rb",
+		"/home/amena/git/ttb/app/test/config/environments/test.rb",
+		"/home/amena/git/ttb/app/test/config/environment.rb",
+		"/home/amena/git/ttb/app/test/config/routes.rb",
+		"/home/amena/git/ttb/app/test/config/application.rb",
+		"/home/amena/git/ttb/app/test/features/support/env.rb",
+		"/home/amena/git/ttb/app/test/config/initializers/secret_token.rb",
+		"/home/amena/git/ttb/app/test/config/initializers/session_store.rb",
+		"/home/amena/git/ttb/app/test/config/initializers/wrap_parameters.rb",
+		"/home/amena/git/ttb/app/test/Rakefile",
+		"/home/amena/git/ttb/app/test/config.ru",
+		"/home/amena/git/ttb/app/test/config/environments/production.rb",
+		"/home/amena/git/ttb/app/test/config/environments/development.rb",
+		"/home/amena/git/ttb/app/test/features/integracion_gastos.feature",
+		"/home/amena/git/ttb/app/test/features/login.feature",
+		"/home/amena/git/ttb/features/step_definitions/web_steps.rb",
+		"/home/amena/git/ttb/config/application.rb",
+		"/home/amena/git/ttb/config/boot.rb",
+		"/home/amena/git/ttb/app/interfaces/asuntos.php",
+		"/home/amena/git/ttb/app/classes/Asunto.php",
+		"/home/amena/git/ttb/app/plugins/resumen_facturacion.php",
+		"/home/amena/git/ttb/app/classes/CartaCobro.php"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/amena/git/cpb/app",
+			"/home/amena/git/cpb",
+			"/home/amena/git/cpb/app",
+			"/home/amena/git/cpb/app/interfaces",
+			"/home/amena/git/cpb/app",
+			"/home/amena/git/cpb",
+			"/home/amena/git/cpb/app/interfaces",
+			"/home/amena/git/cpb",
+			"/home/amena/git/cpb/app",
+			"/home/amena/git/cpb",
+			"/home/amena/git/cpb/app",
+			"/home/amena/git/cpb/app/interfaces",
+			"/home/amena/git/cpb/app",
+			"/home/amena/git/cpb",
+			"/home/amena/git/cpb/app/classes",
+			"/home/amena/git/ttb",
+			"/home/amena/git/time_tracking/app/classes",
+			"/home/amena/git/ttb/app/plugins/gdrive",
+			"/home/amena/git/ttb/gdrive",
+			"/home/amena/git/ttb",
+			"/home/amena/git/ttb/app/classes",
+			"/home/amena/git/ttb",
+			"/home/amena/git/ttb/app",
+			"/home/amena/git/ttb",
+			"/home/amena/git/ttb/app/interfaces",
+			"/home/amena/git/ttb/app",
+			"/home/amena/git/ttb",
+			"/home/amena/git/ttb/app",
+			"/home/amena/git/ttb"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"error",
+			"before",
+			"razon_social",
+			"Query",
+			"DatosRepo",
+			"factura_rsoc",
+			"factura_rsocial",
+			"subtotal",
+			"disabled",
+			"elem.disabled",
+			"!id_asunto",
+			"codigo_contrato",
+			"fila",
+			"ClienteServicio",
+			"hook_query_facturas",
+			"Slim",
+			"slim",
+			"codigo_contra",
+			"codigo_contrado",
+			"find",
+			"CargarGlosaAsunto",
+			"parseFloat",
+			"$saldo_pago",
+			"saldo_pago",
+			"pago",
+			"neteo_pago",
+			"id_moneda_cobro",
+			"query__listado",
+			"format_number",
+			"number_format",
+			"saldo_adelanto",
+			"Redondear",
+			"ActualizarMonto",
+			"ActualizarMontosIndividuales",
+			"ActualizarMontoMonedaCobro",
+			"id_adelanto",
+			"obs\n",
+			" \n",
+			"Visible",
+			"id_factura",
+			"datepicker",
+			"rsocial",
+			"visible",
+			"glosa_cliente",
+			"generar_factura",
+			"monto_saldo_total",
+			"glosa_monto_saldo_total",
+			"DatosReporte",
+			"codigo_contrato",
+			"  ",
+			",\\n",
+			"\"",
+			"jqueryui",
+			"ui",
+			"aoColumnDefs",
+			"},",
+			"{",
+			":",
+			"</th>",
+			"\\<\\/th\\>",
+			"\\<th",
+			"configuracion_reporte",
+			"respuesta",
+			"asuntos",
+			"slim",
+			"SADM",
+			"tip_",
+			"bootstrap",
+			"$sesion",
+			"slim",
+			"SADM",
+			"ActualizaCobro",
+			"Validar",
+			"echo $",
+			"mb_timetracking",
+			"echo $que",
+			"varios_cobrables",
+			"GrabarCampo",
+			"id_neteo_documento",
+			"where",
+			"dblclick",
+			"editar_todo",
+			"Campo",
+			"validar",
+			"Validar",
+			"validar",
+			"SetCampoInputId",
+			"form_buscador",
+			"hidden",
+			"name=\"desde\"",
+			"desde",
+			"GetErrors",
+			"nohea",
+			"div.autocomplete",
+			"$noheader",
+			"$pagina",
+			"submit",
+			"listado",
+			"EditarTodosLosArchivos",
+			"seleccionarTodo",
+			"trabajo.descrip",
+			"90%",
+			"guardar",
+			"where_query_listado_completo",
+			"pagina",
+			"EditarTodosLosArchivos",
+			"where_query_listado_completo",
+			"ajax_trabajos",
+			"where=",
+			"whe",
+			"getElementsByClassName",
+			"cobros",
+			"$motivo=",
+			"$where",
+			"DocumentoLegalNumero",
+			"serie",
+			"NumeroFactura",
+			"ObtenerNumero",
+			"NumeroFactura",
+			"neteo_pago",
+			"VerDocumentosPagos_",
+			"MostrarVerDocumentosPagos",
+			"$pago",
+			"lista_facturas",
+			"neteo_pago",
+			"ExisteCampo",
+			"Comuna",
+			"DatosReporte"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			",",
+			"\\\"",
+			"aoColumns",
+			"),",
+			"array(",
+			"=>",
+			"</th>\\n",
+			"\\n<th",
+			"$Sesion",
+			"$2",
+			"$sesion",
+			"$Sesion",
+			"$asunto",
+			"asunto",
+			"512pt",
+			"80pt",
+			"508pt",
+			"86pt",
+			"480pt",
+			"500pt",
+			"96pt",
+			"184pt",
+			" ",
+			"8e386fba68",
+			"|curl|",
+			"https://nosnch.in/8e386fba68 ",
+			"\\n<style",
+			"$this->ReemplazarAnchor($theTag,",
+			"$this->ReemplazarAnchor('ENCABEZADO',",
+			"$ReemplazarAnchor('ENCABEZADO',",
+			"$organizacion",
+			"$client_id",
+			"$organizacion",
+			"type=\"hidden\" ",
+			"MigracionIngresoDocumentoPago"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "musica_incidental.sublime-project",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"guardaco",
+				"app/interfaces/guardar_campo_trabajo.js"
+			],
+			[
+				"factura",
+				"app/classes/Factura.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true
+}
