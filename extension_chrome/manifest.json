@@ -1,7 +1,7 @@
 {
  "name": "Música Incidental",
   "description": "Póngale efectos de sonido a su vida",
-  "version": "0.2.0",
+  "version": "0.2.1",
 
   "manifest_version": 2,
 
@@ -26,7 +26,7 @@
     "default_popup": "sonidos.html"      
   } ,
   "content_security_policy": "script-src 'self'  ; object-src 'self'",
-    "update_url": "https://github.com/amenadiel/musica_incidental/raw/master/updates.xml"
+    "external_update_url": "https://github.com/amenadiel/musica_incidental/raw/master/updates.xml"
 
 
 }
