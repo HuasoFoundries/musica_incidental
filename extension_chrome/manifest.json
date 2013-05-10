@@ -1,14 +1,14 @@
 {
  "name": "Música Incidental",
   "description": "Póngale efectos de sonido a su vida",
-  "version": "0.2.1",
+  "version": "0.3",
 
   "manifest_version": 2,
 
   "background": {
-    "scripts": ["scripts/main.js"],
-    "persistent": true
+    "page": "app.html"
   },
+  "options_page": "settings.html",
 
 
 "icons": { "16": "images/icon-16x16.png",
@@ -19,14 +19,14 @@
             "128": "images/icon-128x128.png"
        },
 
-    "permissions": [   "tabs"],
+    "permissions": [   "unlimited_storage","file://*", "tabs"],
   "browser_action": {
     "default_icon": "images/icon-48x48.png", 
     "default_title": "Música Incidental",     
     "default_popup": "sonidos.html"      
   } ,
-  "content_security_policy": "script-src 'self'  ; object-src 'self'",
-    "external_update_url": "https://github.com/amenadiel/musica_incidental/raw/master/updates.xml"
+  "content_security_policy": "script-src 'self'  ; object-src 'self'"
+   
 
 
 }

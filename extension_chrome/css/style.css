@@ -22,7 +22,10 @@
 #disable, #continue_btn,#backgrounddiv {
   display: none;
 }
- 
+ #settings {
+position:fixed;top:0;left:0;width:124px;height:24px;font-family:Verdana;font-size:9px;background:url(../images/Settings-icon.png) no-repeat;padding-top:6px;padding-left:25px;cursor:pointer;
+}
+ #settings:hover {border:1px solid #EEE;}
  
 .new {background:#FFC;}
 
@@ -44,7 +47,7 @@ height: 30px;
 padding: 10px 0;}
 
 
-ul#botonesysonidos {list-style: none;padding: 0;}
+ul#botonesysonidos {list-style: none;padding: 7px 1px 0 1px;}
 ul#botonesysonidos li {list-style: none;
 float: left;
 height: 110px;
@@ -62,3 +65,10 @@ ul#botonesysonidos li audio {width:45px;display:block;clear:both;margin:auto;pad
 
 
 #sonidos {width:600px;height:430px;}
+
+#selectorarchivos { position: absolute;
+left: 100px;
+top: -4px;
+border: 1px solid #CCC;
+height: 23px;
+z-index: 100;}
