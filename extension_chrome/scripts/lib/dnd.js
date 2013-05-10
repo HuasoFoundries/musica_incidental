@@ -23,7 +23,7 @@ function DnDFileController(selector, onDropCallback) {
     e.preventDefault();
 
     el_.classList.remove('dropping');
-
+    //console.log(e.dataTransfer);
     onDropCallback(e.dataTransfer.files)
   };
 

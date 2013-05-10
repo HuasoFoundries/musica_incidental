@@ -1,7 +1,7 @@
 {
  "name": "Música Incidental",
   "description": "Póngale efectos de sonido a su vida",
-  "version": "0.3",
+  "version": "0.4",
 
   "manifest_version": 2,
 
@@ -19,7 +19,7 @@
             "128": "images/icon-128x128.png"
        },
 
-    "permissions": [   "unlimited_storage","file://*", "tabs"],
+    "permissions": [   "unlimited_storage",  "tabs"],
   "browser_action": {
     "default_icon": "images/icon-48x48.png", 
     "default_title": "Música Incidental",     

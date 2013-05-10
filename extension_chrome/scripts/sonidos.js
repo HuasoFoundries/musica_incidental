@@ -7,7 +7,7 @@ var LoggedIn=LoggedIn || new jQuery.Deferred();
 var bktimer=null;
 
 	
- chrome.extension.getURL
+ 
 	 
 require(["jquery","lib/basicapp"],function(jQuery) {
 
@@ -26,10 +26,10 @@ require(["jquery","lib/basicapp"],function(jQuery) {
 					elemento.appendTo('#botonesysonidos');
 				}*/
 			
-		 jQuery('#settings').click(function() {
-		 	chrome.tabs.create( {
-			'url': chrome.extension.getURL( 'settings.html' )
-		});
+				 jQuery('#settings').click(function() {
+				 	chrome.tabs.create( {
+					'url': chrome.extension.getURL( 'settings.html' )
+				});
 		 });
 
 
