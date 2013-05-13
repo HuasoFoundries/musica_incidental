@@ -95,20 +95,20 @@ function listAllEntries(dirEntry) {
          if(sonido[2]=='lnk') {
             if(sonido[1]=='swf') {
                
-              var elemento=jQuery('<li/>').append('<embed  src="sounds/'+sonido[0]+'.'+sonido[1]+'" type="application/x-shockwave-flash" width="70" height="90">'+sonido[0]);
+              var elemento=jQuery('<li/>').append('<embed  src="sounds/'+sonido[0]+'.'+sonido[1]+'" type="application/x-shockwave-flash" width="70" height="90">'+sonido[0].replace(/_/g,' '));
               elemento.appendTo('#botonesysonidos');
             } else if (sonido[1]=='mp3') {
-              var elemento=jQuery('<li/>').append('<audio controls><source src="sounds/'+sonido[0]+'.'+sonido[1]+'" /></audio>'+sonido[0]); 
+              var elemento=jQuery('<li/>').append('<audio controls><source src="sounds/'+sonido[0]+'.'+sonido[1]+'" /></audio>'+sonido[0].replace(/_/g,' ')); 
               elemento.appendTo('#botonesysonidos');
             } 
          } else {
            if(sonido[1]=='swf') {
                var src=window.URL.createObjectURL(f);
-              var elemento=jQuery('<li/>').append('<embed  src="'+src+'" type="application/x-shockwave-flash" width="70" height="90">'+sonido[0]);
+              var elemento=jQuery('<li/>').append('<embed  src="'+src+'" type="application/x-shockwave-flash" width="70" height="90">'+sonido[0].replace(/_/g,' '));
               elemento.appendTo('#botonesysonidos');
             } else if (sonido[1]=='mp3') {
               var src=window.URL.createObjectURL(f);
-              var elemento=jQuery('<li/>').append('<audio controls><source src="'+src+'" /></audio>'+sonido[0]); 
+              var elemento=jQuery('<li/>').append('<audio controls><source src="'+src+'" /></audio>'+sonido[0].replace(/_/g,' ')); 
               elemento.appendTo('#botonesysonidos');
             } 
         }
