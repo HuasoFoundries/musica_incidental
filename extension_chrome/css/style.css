@@ -8,8 +8,8 @@
   font-size:11px;
   background:#F9F9F9;
 }*/
- 
-.clearfix { clear: both;  content: ".";  display: block;height: 7px;   } 
+
+.clearfix { clear: both;  content: ".";  display: block;height: 7px;   }
 .clearfix:after{  clear: both;  content: ".";  display: block;  visibility: hidden;  font-size: 0;}
 
 
@@ -17,8 +17,8 @@
   font-weight: bold;
 }
 
- 
- 
+
+
 #disable, #continue_btn,#backgrounddiv {
   display: none;
 }
@@ -26,7 +26,13 @@
 position:fixed;top:0;left:0;width:124px;height:24px;font-family:Verdana;font-size:9px;background:url(../images/Settings-icon.png) no-repeat;padding-top:6px;padding-left:25px;cursor:pointer;
 }
  #settings:hover {border:1px solid #EEE;}
- 
+
+#search{
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
 .new {background:#FFC;}
 
 .item img, .item a img {

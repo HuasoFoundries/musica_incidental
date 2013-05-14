@@ -34,7 +34,7 @@ function openFS() {
   window.requestFileSystem(TEMPORARY, 1024*1024, function(myFs) {
     fs = myFs;
     cwd = fs.root;
-    
+
     logger.log('<p>Opened <em>' + fs.name, + '</em></p>');
     getAllEntries(fs.root);
   }, function(e) {
@@ -78,53 +78,26 @@ function listAllEntries(dirEntry) {
     var frag = document.createDocumentFragment();
     // Native readEntries() returns an EntryArray, which doesn't have forEach.
     [].forEach.call(results, function(entry) {
-      var li = document.createElement('li');
-      li.dataset.type = entry.isFile ? 'file' : 'folder';
-      
- 
-
-      var span = document.createElement('span');
- 
-
       if (entry.isFile) {
+        entry.file(function(f){
+          var nombre = f.name.replace(/\..+$/, '').replace(/[_-]+/g, ' ');
+          var src = f.name.match(/\.lnk$/) ?
+            'sounds/' + f.name.replace(/\.lnk$/, '') :
+            window.URL.createObjectURL(f);
+          var html = f.name.match(/\.swf/) ?
+            '<embed src="'+src+'" type="application/x-shockwave-flash" width="70" height="90">' :
+            '<audio controls><source src="'+src+'" /></audio>';
 
-        entry.file(function(f) {
-          console.log(f);
-        
-         var sonido=f.name.split('.');
-         if(sonido[2]=='lnk') {
-            if(sonido[1]=='swf') {
-               
-              var elemento=jQuery('<li/>').append('<embed  src="sounds/'+sonido[0]+'.'+sonido[1]+'" type="application/x-shockwave-flash" width="70" height="90">'+sonido[0].replace(/_/g,' '));
-              elemento.appendTo('#botonesysonidos');
-            } else if (sonido[1]=='mp3') {
-              var elemento=jQuery('<li/>').append('<audio controls><source src="sounds/'+sonido[0]+'.'+sonido[1]+'" /></audio>'+sonido[0].replace(/_/g,' ')); 
-              elemento.appendTo('#botonesysonidos');
-            } 
-         } else {
-           if(sonido[1]=='swf') {
-               var src=window.URL.createObjectURL(f);
-              var elemento=jQuery('<li/>').append('<embed  src="'+src+'" type="application/x-shockwave-flash" width="70" height="90">'+sonido[0].replace(/_/g,' '));
-              elemento.appendTo('#botonesysonidos');
-            } else if (sonido[1]=='mp3') {
-              var src=window.URL.createObjectURL(f);
-              var elemento=jQuery('<li/>').append('<audio controls><source src="'+src+'" /></audio>'+sonido[0].replace(/_/g,' ')); 
-              elemento.appendTo('#botonesysonidos');
-            } 
-        }
-          
-
-
+          jQuery('<li/>').html(html + nombre).appendTo('#botonesysonidos');
         }, onError);
-      }  
-       
+      }
+
     });
 
-   
+
 
   }, onError);
 }
-
 
 function getAllEntries(dirEntry) {
   dirEntry.createReader().readEntries(function(results) {
@@ -138,7 +111,7 @@ function getAllEntries(dirEntry) {
     [].forEach.call(results, function(entry) {
       var li = document.createElement('li');
       li.dataset.type = entry.isFile ? 'file' : 'folder';
-      
+
       var deleteLink = document.createElement('a');
       deleteLink.href = '';
       deleteLink.innerHTML = '<img src="images/icons/delete.svg" alt="Delete this" title="Delete this">';
@@ -333,6 +306,5 @@ function playPauseAudio(e) {
   e.preventDefault();
 }
 
- 
 
- 
+
