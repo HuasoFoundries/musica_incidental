@@ -218,7 +218,10 @@ a.active {
 .clearfix { clear: both;  content: ".";  display: block;height: 7px;   }
 .clearfix:after{  clear: both;  content: ".";  display: block;  visibility: hidden;  font-size: 0;}
 
-
+#background {width: 90% !important;
+margin: 10px;
+ padding: 20px;
+background: #FFF;}
 .bold {
   font-weight: bold;
 }

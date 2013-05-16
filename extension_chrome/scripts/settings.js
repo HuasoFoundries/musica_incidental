@@ -124,6 +124,13 @@ require(["jquery","lib/logger","lib/dnd","lib/basicapp"],function(jQuery) {
 		  	var url=jQuery(this).data('url');
 		  	downloadFile(url, filename);
 		  });
+		  jQuery('#soundstab').click(function() {
+				chrome.tabs.create( {
+    				'url': 	 chrome.extension.getURL( 'app.html' )	} 
+    			
+     			);
+		  });
+
 	});
 
 });
