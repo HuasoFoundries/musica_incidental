@@ -68,6 +68,57 @@ function writeFile(file, i) {
     getAllEntries(cwd);
   }, onError);
 }
+
+function saveFile(data, path) {
+    if (!fs) return;
+
+    fs.root.getFile(path, {create: true}, function(fileEntry) {
+        fileEntry.createWriter(function(writer) {
+            writer.write(data);
+             getAllEntries(fs.root);
+        }, onError);
+    }, onError);
+}
+
+
+function downloadFile(url, filename) {
+ 
+
+        var xhr=new XMLHttpRequest();
+        xhr.open("GET",url,true);
+        xhr.responseType = 'blob';
+        xhr.onload=function(){
+            if (this.status==200){
+              var blob = this.response;
+
+                  saveFile(blob,filename );
+            }
+        };
+        xhr.send();
+}
+var Linkear = function(filename) {
+   fs.root.getFile(filename+'.lnk', {create: true}, function(fileEntry) {
+
+    // Create a FileWriter object for our FileEntry (log.txt).
+    fileEntry.createWriter(function(fileWriter) {
+
+      fileWriter.onwriteend = function(e) {
+        console.log('Write completed.');
+      };
+
+      fileWriter.onerror = function(e) {
+        console.log('Write failed: ' + e.toString());
+      };
+
+       var blob = new Blob(['sounds/'+filename], {type: 'text/plain'});
+
+      fileWriter.write(blob);
+
+    }, onError);
+
+  }, onError);
+};
+
 function listAllEntries(dirEntry) {
   dirEntry.createReader().readEntries(function(results) {
     html = [];
