@@ -116,7 +116,7 @@ require(["jquery","lib/logger","lib/dnd","lib/basicapp"],function(jQuery) {
 		  for(i=0;i<urls_sonidos.length;i++) {
 		  	filename=urls_sonidos[i][0].split('/').slice(-1);
 		  	filename=filename[0].replace('?raw=true','');
-		  	jQuery('#urls_sonidos').append('<li>('+urls_sonidos[i][1]+')&nbsp;&nbsp;<a class="downloadme" data-url="'+urls_sonidos[i][0]+'" data-filename="'+filename+'">'+filename+'</a></li>');
+		  	jQuery('#urls_sonidos').append('<li><a class="downloadme" data-url="'+urls_sonidos[i][0]+'" data-filename="'+filename+'">('+urls_sonidos[i][1]+') '+filename+'</a></li>');
 		  }
 
 		  jQuery('#urls_sonidos').on('click','a',function() {
@@ -126,7 +126,7 @@ require(["jquery","lib/logger","lib/dnd","lib/basicapp"],function(jQuery) {
 		  });
 		  jQuery('#soundstab').click(function() {
 				chrome.tabs.create( {
-    				'url': 	 chrome.extension.getURL( 'app.html' )	} 
+    				'url': 	 chrome.extension.getURL( 'bigtab.html' )	} 
     			
      			);
 		  });

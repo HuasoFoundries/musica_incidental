@@ -185,9 +185,7 @@ a.delete img {
 a.active {
   color: #33ccff;
 }
-.panel {
-  float: left;
-}
+ 
 #log {
   font-family: "Courier New";
   margin-left: 1em;
@@ -218,32 +216,37 @@ a.active {
 .clearfix { clear: both;  content: ".";  display: block;height: 7px;   }
 .clearfix:after{  clear: both;  content: ".";  display: block;  visibility: hidden;  font-size: 0;}
 
-#background {width: 90% !important;
-margin: 10px;
- padding: 20px;
-background: #FFF;}
+#background {
+margin: 5px;
+ padding: 5px;
+background: #FFF;
+overflow:auto;}
 .bold {
   font-weight: bold;
 }
-.panel {padding:1px 10px;margin:2px 10px;border:1px solid #CCC;width:380px;height:500px;overflow:auto;}
-.paneltitle {display:block;float:left;width:420px;}
-
-#urls_sonidos li {display:block;height:25px;}
+.panel {padding:1px 10px;border:1px solid #CCC;height:500px;overflow:auto;}
+ 
+#urls_sonidos li {display:block;height:25px;padding-left:25px;}
 .downloadme {cursor:pointer;}
-#urls_sonidos li:hover {padding-left:25px;background:url(../images/arrow_left.png) no-repeat;}
+#urls_sonidos li:hover {background:url(../img/arrow_left.png) no-repeat;}
 
 #disable, #continue_btn,#backgrounddiv {
   display: none;
 }
+
+#controles {position:fixed;top:0;left:0;}
  #settings {
-position:fixed;top:0;left:0;width:124px;height:24px;font-family:Verdana;font-size:9px;background:url(../images/Settings-icon.png) no-repeat;padding-top:6px;padding-left:25px;cursor:pointer;
+float:left;height:24px;background:url(../img/Settings-icon.png) no-repeat;padding-top:6px;padding-left:25px;cursor:pointer;
 }
- #settings:hover {border:1px solid #EEE;}
+ #soundstab {
+float:left;height:24px;background:url(../img/soundstab.png) no-repeat;padding-top:6px;padding-left:25px;cursor:pointer;
+}
 
 #search{
   position: fixed;
   right: 0;
   top: 0;
+  padding:2px !important;
 }
 
 .new {background:#FFC;}
@@ -256,15 +259,7 @@ position:fixed;top:0;left:0;width:124px;height:24px;font-family:Verdana;font-siz
   float:left;
 }
 
-#controles {margin: 2px;
-clear: both;
-display: block;
-width: 450px;
-position: relative;
-left: 5px;
-height: 30px;
-padding: 10px 0;}
-
+ 
 
 ul#botonesysonidos {list-style: none;padding: 7px 1px 0 1px;}
 ul#botonesysonidos li {list-style: none;
@@ -283,7 +278,7 @@ ul#botonesysonidos li embed {display:block;clear:both;margin:auto;}
 ul#botonesysonidos li audio {width:45px;display:block;clear:both;margin:auto;padding: 25px 5px;}
 
 
-#sonidos {width:600px;height:430px;}
+#sonidos {width:600px;height:430px;overflow-y:auto;}
 
 #selectorarchivos { position: absolute;
 left: 100px;

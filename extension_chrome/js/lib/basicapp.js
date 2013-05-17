@@ -13,6 +13,8 @@ var html = [];
 
 
 
+ 
+
 function clearFS() {
   fs.root.createReader().readEntries(function(results) {
     [].forEach.call(results, function(entry) {
@@ -139,7 +141,7 @@ function listAllEntries(dirEntry) {
             '<embed src="'+src+'" type="application/x-shockwave-flash" width="70" height="90">' :
             '<audio controls><source src="'+src+'" /></audio>';
 
-          jQuery('<li/>').html(html + nombre).appendTo('#botonesysonidos');
+          jQuery('<li/>').addClass(nombre).html(html + nombre).appendTo('#botonesysonidos');
         }, onError);
       }
 
@@ -165,7 +167,7 @@ function getAllEntries(dirEntry) {
 
       var deleteLink = document.createElement('a');
       deleteLink.href = '';
-      deleteLink.innerHTML = '<img src="images/icons/delete.svg" alt="Delete this" title="Delete this">';
+      deleteLink.innerHTML = '<img src="img/icons/delete.svg" alt="Delete this" title="Delete this">';
       deleteLink.classList.add('delete');
       deleteLink.onclick = function(e) {
         e.preventDefault();
@@ -256,7 +258,7 @@ function getAllEntries(dirEntry) {
           }
 
           /*var img = document.createElement('img');
-          img.src = 'images/icons/file.png';
+          img.src = 'img/icons/file.png';
           img.title = 'This item is a file';
           img.alt = img.title;
           span.appendChild(img);*/
@@ -282,7 +284,7 @@ function getAllEntries(dirEntry) {
         span.appendChild(span2);
         span.classList.add('bold');
         var img = document.createElement('img');
-        img.src = 'images/icons/folder.png';
+        img.src = 'img/icons/folder.png';
         img.alt = 'This item is a folder';
         img.title = img.alt;
         span.title = img.alt;

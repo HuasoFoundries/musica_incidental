@@ -6,7 +6,7 @@
 //Not using strict: uneven strict support in browsers, #392, and causes
 //problems with requirejs.exec()/transpiler plugins that may not be strict.
 /*jslint regexp: true, nomen: true, sloppy: true */
-/*global window, navigator, document, importScripts, setTimeout, opera */
+/*global window, navigator, document, importjs, setTimeout, opera */
 function onError(e) {
   console.log(e);
   logger.log('Error ' + e.code + ' - ' + e.name);
@@ -26,7 +26,7 @@ var requirejs, require, define;
         ap = Array.prototype,
         apsp = ap.splice,
         isBrowser = !!(typeof window !== 'undefined' && navigator && document),
-        isWebWorker = !isBrowser && typeof importScripts !== 'undefined',
+        isWebWorker = !isBrowser && typeof importjs !== 'undefined',
         //PS3 indicates loaded and complete, but need to wait for complete
         //specifically. Sequence is 'loading', 'loaded', execution,
         // then 'complete'. The UA check is unfortunate, but not sure how
@@ -133,7 +133,7 @@ var requirejs, require, define;
         };
     }
 
-    function scripts() {
+    function js() {
         return document.getElementsByTagName('script');
     }
 
@@ -359,7 +359,7 @@ var requirejs, require, define;
 
         function removeScript(name) {
             if (isBrowser) {
-                each(scripts(), function (scriptNode) {
+                each(js(), function (scriptNode) {
                     if (scriptNode.getAttribute('data-requiremodule') === name &&
                             scriptNode.getAttribute('data-requirecontext') === context.contextName) {
                         scriptNode.parentNode.removeChild(scriptNode);
@@ -688,7 +688,7 @@ var requirejs, require, define;
 
             //If still waiting on loads, and the waiting load is something
             //other than a plugin resource, or there are still outstanding
-            //scripts, then just try back later.
+            //js, then just try back later.
             if ((!expired || usingPathFallback) && stillLoading) {
                 //Something is still waiting to load. Wait for it, but only
                 //if a timeout is not already in effect.
@@ -1861,19 +1861,19 @@ var requirejs, require, define;
             return node;
         } else if (isWebWorker) {
             try {
-                //In a web worker, use importScripts. This is not a very
-                //efficient use of importScripts, importScripts will block until
+                //In a web worker, use importjs. This is not a very
+                //efficient use of importjs, importjs will block until
                 //its script is downloaded and evaluated. However, if web workers
                 //are in play, the expectation that a build has been done so that
                 //only one script needs to be loaded anyway. This may need to be
                 //reevaluated if other use cases become common.
-                importScripts(url);
+                importjs(url);
 
                 //Account for anonymous modules
                 context.completeLoad(moduleName);
             } catch (e) {
-                context.onError(makeError('importscripts',
-                                'importScripts failed for ' +
+                context.onError(makeError('importjs',
+                                'importjs failed for ' +
                                     moduleName + ' at ' + url,
                                 e,
                                 [moduleName]));
@@ -1886,7 +1886,7 @@ var requirejs, require, define;
             return interactiveScript;
         }
 
-        eachReverse(scripts(), function (script) {
+        eachReverse(js(), function (script) {
             if (script.readyState === 'interactive') {
                 return (interactiveScript = script);
             }
@@ -1897,7 +1897,7 @@ var requirejs, require, define;
     //Look for a data-main script attribute, which could also adjust the baseUrl.
     if (isBrowser) {
         //Figure out baseUrl. Get it from the script tag with require.js in it.
-        eachReverse(scripts(), function (script) {
+        eachReverse(js(), function (script) {
             //Set the 'head' where we can append children by
             //using the script's parent.
             if (!head) {
@@ -2145,7 +2145,7 @@ jQuery.fn = jQuery.prototype = {
 				if ( match[1] ) {
 					context = context instanceof jQuery ? context[0] : context;
 
-					// scripts is true for back-compat
+					// js is true for back-compat
 					jQuery.merge( this, jQuery.parseHTML(
 						match[1],
 						context && context.nodeType ? context.ownerDocument || context : document,
@@ -2493,29 +2493,29 @@ jQuery.extend({
 
 	// data: string of html
 	// context (optional): If specified, the fragment will be created in this context, defaults to document
-	// keepScripts (optional): If true, will include scripts passed in the html string
-	parseHTML: function( data, context, keepScripts ) {
+	// keepjs (optional): If true, will include js passed in the html string
+	parseHTML: function( data, context, keepjs ) {
 		if ( !data || typeof data !== "string" ) {
 			return null;
 		}
 		if ( typeof context === "boolean" ) {
-			keepScripts = context;
+			keepjs = context;
 			context = false;
 		}
 		context = context || document;
 
 		var parsed = rsingleTag.exec( data ),
-			scripts = !keepScripts && [];
+			js = !keepjs && [];
 
 		// Single tag
 		if ( parsed ) {
 			return [ context.createElement( parsed[1] ) ];
 		}
 
-		parsed = jQuery.buildFragment( [ data ], context, scripts );
+		parsed = jQuery.buildFragment( [ data ], context, js );
 
-		if ( scripts ) {
-			jQuery( scripts ).remove();
+		if ( js ) {
+			jQuery( js ).remove();
 		}
 
 		return jQuery.merge( [], parsed.childNodes );
@@ -2847,7 +2847,7 @@ jQuery.ready.promise = function( obj ) {
 		// we once tried to use readyState "interactive" here, but it caused issues like the one
 		// discovered by ChrisS here: http://bugs.jquery.com/ticket/12282#comment:15
 		if ( document.readyState === "complete" ) {
-			// Handle it asynchronously to allow scripts the opportunity to delay ready
+			// Handle it asynchronously to allow js the opportunity to delay ready
 			setTimeout( jQuery.ready );
 
 		} else {
@@ -7560,7 +7560,7 @@ jQuery.fn.extend({
 		// Flatten any nested arrays
 		args = core_concat.apply( [], args );
 
-		var fragment, first, scripts, hasScripts, node, doc,
+		var fragment, first, js, hasjs, node, doc,
 			i = 0,
 			l = this.length,
 			set = this,
@@ -7588,8 +7588,8 @@ jQuery.fn.extend({
 			}
 
 			if ( first ) {
-				scripts = jQuery.map( getAll( fragment, "script" ), disableScript );
-				hasScripts = scripts.length;
+				js = jQuery.map( getAll( fragment, "script" ), disableScript );
+				hasjs = js.length;
 
 				// Use the original fragment for the last item instead of the first because it can end up
 				// being emptied incorrectly in certain situations (#8070).
@@ -7599,26 +7599,26 @@ jQuery.fn.extend({
 					if ( i !== iNoClone ) {
 						node = jQuery.clone( node, true, true );
 
-						// Keep references to cloned scripts for later restoration
-						if ( hasScripts ) {
+						// Keep references to cloned js for later restoration
+						if ( hasjs ) {
 							// Support: QtWebKit
 							// jQuery.merge because core_push.apply(_, arraylike) throws
-							jQuery.merge( scripts, getAll( node, "script" ) );
+							jQuery.merge( js, getAll( node, "script" ) );
 						}
 					}
 
 					callback.call( this[ i ], node, i );
 				}
 
-				if ( hasScripts ) {
-					doc = scripts[ scripts.length - 1 ].ownerDocument;
+				if ( hasjs ) {
+					doc = js[ js.length - 1 ].ownerDocument;
 
-					// Reenable scripts
-					jQuery.map( scripts, restoreScript );
+					// Reenable js
+					jQuery.map( js, restoreScript );
 
-					// Evaluate executable scripts on first document insertion
-					for ( i = 0; i < hasScripts; i++ ) {
-						node = scripts[ i ];
+					// Evaluate executable js on first document insertion
+					for ( i = 0; i < hasjs; i++ ) {
+						node = js[ i ];
 						if ( rscriptType.test( node.type || "" ) &&
 							!data_priv.access( node, "globalEval" ) && jQuery.contains( doc, node ) ) {
 
@@ -7708,7 +7708,7 @@ jQuery.extend({
 		return clone;
 	},
 
-	buildFragment: function( elems, context, scripts, selection ) {
+	buildFragment: function( elems, context, js, selection ) {
 		var elem, tmp, tag, wrap, contains, j,
 			i = 0,
 			l = elems.length,
@@ -7782,11 +7782,11 @@ jQuery.extend({
 			}
 
 			// Capture executables
-			if ( scripts ) {
+			if ( js ) {
 				j = 0;
 				while ( (elem = tmp[ j++ ]) ) {
 					if ( rscriptType.test( elem.type || "" ) ) {
-						scripts.push( elem );
+						js.push( elem );
 					}
 				}
 			}
@@ -7868,7 +7868,7 @@ function restoreScript( elem ) {
 	return elem;
 }
 
-// Mark scripts as having already been evaluated
+// Mark js as having already been evaluated
 function setGlobalEval( elems, refElements ) {
 	var l = elems.length,
 		i = 0;
@@ -8875,7 +8875,7 @@ jQuery.fn.load = function( url, params, callback ) {
 			self.html( selector ?
 
 				// If a selector was specified, locate the right elements in a dummy div
-				// Exclude scripts to avoid IE 'Permission Denied' errors
+				// Exclude js to avoid IE 'Permission Denied' errors
 				jQuery("<div>").append( jQuery.parseHTML( responseText ) ).find( selector ) :
 
 				// Otherwise use the full result
