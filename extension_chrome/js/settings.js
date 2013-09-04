@@ -27,6 +27,7 @@ var urls_sonidos=[
 ['http://www.axonema.net/instants/swf/manjar-colun.swf','instants.cl'],
 ['http://www.axonema.net/instants/swf/tranquilo-papa.swf','instants.cl'],
 ['http://www.axonema.net/instants/swf/salvame-homero.swf','general'],
+['https://github.com/amenadiel/musica_incidental/blob/master/sounds/a_la_larga.mp3','Profesor Rossa']
 ['https://github.com/amenadiel/musica_incidental/blob/master/sounds/alachuchesu.swf?raw=true','general'],
 ['https://github.com/amenadiel/musica_incidental/blob/master/sounds/avispate-bonva.swf?raw=true','general'],
 ['https://github.com/amenadiel/musica_incidental/blob/master/sounds/ayuwoki.swf?raw=true','general'],
@@ -52,6 +53,7 @@ var urls_sonidos=[
 ['http://www.axonema.net/instants/swf2/bigote.swf','el bananero'],
 ['http://www.axonema.net/instants/swf2/lechero.swf','el bananero'],
 ['http://www.axonema.net/instants/swf2/trolazo.swf','el bananero'],
+['https://github.com/amenadiel/musica_incidental/blob/master/sounds/el_bulto.mp3','el bananero'],
 ['https://github.com/amenadiel/musica_incidental/blob/master/sounds/alejo_y_valentina/abajarame_la_lechuga.mp3?raw=true','alejo y valentina'],
 ['https://github.com/amenadiel/musica_incidental/blob/master/sounds/alejo_y_valentina/dejame_de_hinchar_las_pelotas.mp3?raw=true','alejo y valentina'],
 ['https://github.com/amenadiel/musica_incidental/blob/master/sounds/alejo_y_valentina/esperame_en_la_catrera.mp3?raw=true','alejo y valentina'],
