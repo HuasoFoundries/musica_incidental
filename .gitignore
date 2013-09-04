@@ -1,3 +1,5 @@
 extension_chrome.zip
 key.pem
-musica_incidental.sublime-project musica_incidental.sublime-workspace
+musica_incidental.sublime-project 
+musica_incidental.sublime-workspace
+*sublime*
