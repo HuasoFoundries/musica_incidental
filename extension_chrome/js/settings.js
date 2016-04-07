@@ -20,6 +20,12 @@ window.URL = window.URL || window.webkitURL;
 
 
 
+  
+
+require(["jquery","lib/logger","lib/dnd","lib/basicapp"],function(jQuery) {
+  
+
+
 var urls_sonidos=[
 ['http://www.axonema.net/instants/swf/le-pego.swf','instants.cl'],
 ['http://www.axonema.net/instants/swf/cortala-israel.swf','instants.cl'],
@@ -27,7 +33,7 @@ var urls_sonidos=[
 ['http://www.axonema.net/instants/swf/manjar-colun.swf','instants.cl'],
 ['http://www.axonema.net/instants/swf/tranquilo-papa.swf','instants.cl'],
 ['http://www.axonema.net/instants/swf/salvame-homero.swf','general'],
-['https://github.com/amenadiel/musica_incidental/blob/master/sounds/a_la_larga.mp3','Profesor Rossa']
+['https://github.com/amenadiel/musica_incidental/blob/master/sounds/a_la_larga.mp3','Profesor Rossa'],
 ['https://github.com/amenadiel/musica_incidental/blob/master/sounds/alachuchesu.swf?raw=true','general'],
 ['https://github.com/amenadiel/musica_incidental/blob/master/sounds/avispate-bonva.swf?raw=true','general'],
 ['https://github.com/amenadiel/musica_incidental/blob/master/sounds/ayuwoki.swf?raw=true','general'],
@@ -84,10 +90,6 @@ var urls_sonidos=[
 ['http://www.axonema.net/instants/swf2/sanguche.swf','alejo y valentina'],
 ['http://www.axonema.net/instants/swf2/comida.swf','alejo y valentina']
 ];
-  
-
-require(["jquery","lib/logger","lib/dnd","lib/basicapp"],function(jQuery) {
-  
 
 
   openFSButton = document.querySelector('#openFSButton');
@@ -116,6 +118,7 @@ require(["jquery","lib/logger","lib/dnd","lib/basicapp"],function(jQuery) {
 		  });
 
 		  for(i=0;i<urls_sonidos.length;i++) {
+		  	if(! urls_sonidos[i]) continue;
 		  	filename=urls_sonidos[i][0].split('/').slice(-1);
 		  	filename=filename[0].replace('?raw=true','');
 		  	jQuery('#urls_sonidos').append('<li><a class="downloadme" data-url="'+urls_sonidos[i][0]+'" data-filename="'+filename+'">('+urls_sonidos[i][1]+') '+filename+'</a></li>');
